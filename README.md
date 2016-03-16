@@ -5,6 +5,12 @@ Aplicación con HTML, CSS y jQuery, donde hacemos un llamado a la API de TVMaze 
 http://spettacolotv.github.io/
 
 
+Funcionalidad de la APP
+-----------
+
+Esta APP funciona muy sencillo, gracias a la API de TVMaze tenemos una gran lista de series de televisión, las cuales podemos buscar y elegir nuestras favoritas dando click en el Corazón.
+
+
 Platzi
 -----------
 
