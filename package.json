@@ -1,0 +1,14 @@
+{
+  "name": "spettacolotv",
+  "description": "Aplicación para listar shows de televisión",
+  "version": "0.1.0",
+  "dependencies": {
+    "jquery": "^2.2.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  },
+  "scripts":{
+  	"build-js": "browserify js/index.js > js/app.js"
+  }
+}
