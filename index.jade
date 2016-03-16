@@ -3,8 +3,32 @@ html(lang="es")
 	head
 		title Spettacolo TV
 		link(href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700|Droid+Serif:400,700' rel='stylesheet' type='text/css')
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
 		link(rel="stylesheet" href="css/app.css")
 	body
-		h1 Spettacolo TV
 
+		header(class="Header")
+			div(class="medium")
+				h1(class="Header-title") Spettacolo TV
+				div(class="Header-form")
+					form(action="" class="form")
+						input(type="text" placeholder="Buscar un Show de TV")
+						span(class="fa fa-search")
+
+		section(class="Shows medium")
+			article(class="Shows-show")
+				figure(class="Shows-show-cover")
+					img(class="img" src="img/the-100.jpg")
+					figcaption(class="Shows-show-cover-name")
+						span The 100
+				div(class="Shows-show-data")
+					p(class="Shows-show-data-nextepisode") Stealing Fire
+					p(class="Shows-show-data-description") Season one of The 100 saw the human race return, after a 97-year exile in space, to a wildly transformed Earth...only to discover that the human race had never truly left. Clarke found herself forced to lead a band of disposable juvenile delinquents as they faced death at every turn - from a world transformed by radiation, from the fierce Grounders who somehow managed to survive in it, and, perhaps worst of all, from themselves.
+		
+		footer(class="Footer")
+			p(class="Footer-total")
+				span(class="Footer-total-num") 167
+				span(class="Footer-total-exp") Episodios existentes
+
+		script(src="http://code.jquery.com/jquery-2.2.1.min.js")
 		script(src="js/app.js")

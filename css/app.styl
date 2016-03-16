@@ -1,4 +1,117 @@
 @import "nib"
 
+*
+	margin 0
+	padding 0
+
+/*---------------------------------------------------
+# Variables
+---------------------------------------------------*/
+
+Ubuntu = 'Ubuntu', sans-serif
+DroidSerif = 'Droid Serif', serif
+
+/*---------------------------------------------------
+# Tags
+---------------------------------------------------*/
+
 body
-	background purple
+	background #F8F8F8
+	font-family Ubuntu
+	font-size 16px
+	
+/*---------------------------------------------------
+# Components
+---------------------------------------------------*/
+
+.Header
+	background white
+	color #3D3D3D
+	padding 10px
+	text-align center
+	&-title, &-form
+		display block
+		vertical-align middle
+		width 100%
+		margin 5px
+		text-align center
+	&-title
+		text-align center
+	&-form
+		position relative
+		margin 0 auto
+		.form
+			width 300px
+			margin 0 auto 0
+			position relative
+			input
+				background white
+				border 1px solid rgb(148, 149, 150)
+				border-radius 24px
+				box-shadow inset 0 4px 1px -2px rgba(255, 255, 255, 0.17)
+				box-sizing border-box
+				color white
+				font-family Ubuntu
+				font-size 14px
+				padding 10px 10px 10px 50px
+				transition all .3s
+				width 100%
+				&:focus
+					outline none
+					box-shadow inset 0 4px 1px -2px rgba(255, 255, 255, 0.05)
+					transition all .3s
+			.fa-search
+				color #7E828A
+				cursor pointer
+				font-size 22px
+				position absolute
+				left 10px
+				top 7px
+
+.Footer
+	background #3C3C44
+	padding 20px
+	margin 20px 0 0
+	&-total
+		background linear-gradient(bottom, rgb(244, 139, 41), rgb(219, 63, 28))
+		color white
+		width 200px
+		margin 0 auto
+		text-align center
+		padding 10px 0 20px
+		&-num
+			font-size 5em
+			display block
+		&-exp
+			font-size 1em
+			display block
+	
+/*---------------------------------------------------
+# class / id
+---------------------------------------------------*/
+
+.medium
+	margin 0 auto
+	width 100%
+	
+/*---------------------------------------------------
+# Media Queries
+---------------------------------------------------*/
+
+@media screen and (min-width: 640px)
+	.medium
+		width 80%
+
+@media screen and (min-width: 768px)
+	.Header
+		&-title, &-form
+			display inline-block
+			width 49%
+		&-title
+			text-align left
+		&-form
+			margin 0 0 0 auto
+
+@media screen and (min-width: 1280px)
+	.medium
+		width 1250px
