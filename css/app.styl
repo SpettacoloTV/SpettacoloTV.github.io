@@ -53,7 +53,7 @@ img
 				border-radius 24px
 				box-shadow inset 0 4px 1px -2px rgba(255, 255, 255, 0.17)
 				box-sizing border-box
-				color white
+				color #636363
 				font-family Ubuntu
 				font-size 14px
 				padding 10px 10px 10px 50px
@@ -96,8 +96,12 @@ img
 		width 100%
 		&-cover
 			position relative
+			transition all .3s
 			.img
 				width 100%
+			&:hover > .Shows-show-cover-name
+				padding 30px 20px
+				transition all .3s
 			&-name
 				position absolute
 				bottom 3px
@@ -106,6 +110,7 @@ img
 				background rgba(72, 72, 72, 0.78)
 				color white
 				padding 20px
+				transition all .3s
 				h2
 					font-size 1em
 					font-weight 500
@@ -129,8 +134,40 @@ img
 .medium
 	margin 0 auto
 	width 100%
-.heart-red
-	color red
+
+.loader
+	-ms-transform translateZ(0)
+	-webkit-animation load8 1.1s infinite linear
+	-webkit-transform translateZ(0)
+	animation load8 1.1s infinite linear
+	border-bottom 1.1em solid #C4C4C4
+	border-left 1.1em solid #9A9A9A
+	border-right 1.1em solid #C4C4C4
+	border-top 1.1em solid #C4C4C4
+	font-size 10px
+	margin 60px auto
+	position relative
+	text-indent -9999em
+	transform translateZ(0)
+	
+.loader,.loader:after
+	border-radius 50%
+	width 10em
+	height 10em
+
+
+/*---------------------------------------------------
+# Keyframes
+---------------------------------------------------*/
+
+@keyframes load8
+	0%
+		-webkit-transform rotate(0deg)
+		transform rotate(0deg)
+	100%
+		-webkit-transform rotate(360deg)
+		transform rotate(360deg)
+
 /*---------------------------------------------------
 # Media Queries
 ---------------------------------------------------*/
