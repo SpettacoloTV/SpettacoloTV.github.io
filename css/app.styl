@@ -19,7 +19,10 @@ body
 	background #F8F8F8
 	font-family Ubuntu
 	font-size 16px
-	
+
+img
+	border none
+	max-width 100%
 /*---------------------------------------------------
 # Components
 ---------------------------------------------------*/
@@ -75,17 +78,50 @@ body
 	&-total
 		background linear-gradient(bottom, rgb(244, 139, 41), rgb(219, 63, 28))
 		color white
-		width 200px
 		margin 0 auto
-		text-align center
 		padding 10px 0 20px
+		text-align center
+		width 200px
 		&-num
 			font-size 5em
 			display block
 		&-exp
 			font-size 1em
 			display block
-	
+
+.Shows
+	text-align center
+	&-show
+		display block
+		width 100%
+		&-cover
+			position relative
+			.img
+				width 100%
+			&-name
+				position absolute
+				bottom 3px
+				left 0
+				right 0
+				background rgba(128, 128, 128, 0.78)
+				color white
+				padding 20px
+				h2
+					font-size 1em
+					font-weight 500
+					text-align left
+				.fa-heart
+					text-align right
+				.fa-heart, h2
+					float left
+					width 50%
+			&-episode
+				position absolute
+				top 10px
+				right 10px
+				color white
+				font-size .8em
+
 /*---------------------------------------------------
 # class / id
 ---------------------------------------------------*/
@@ -93,7 +129,8 @@ body
 .medium
 	margin 0 auto
 	width 100%
-	
+.heart-red
+	color red
 /*---------------------------------------------------
 # Media Queries
 ---------------------------------------------------*/
@@ -101,6 +138,11 @@ body
 @media screen and (min-width: 640px)
 	.medium
 		width 80%
+	.Shows
+		&-show
+			display inline-block
+			width 210px
+			margin 20px 10px
 
 @media screen and (min-width: 768px)
 	.Header
